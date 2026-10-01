@@ -1,0 +1,302 @@
+.scam-library {
+  width: 100%;
+}
+
+.library-intro {
+  background: var(--bg-white);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.library-intro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.library-intro p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.scam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.scam-card {
+  background: var(--bg-white);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.scam-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary);
+}
+
+.scam-card.expanded {
+  grid-column: 1 / -1;
+}
+
+.scam-header-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+}
+
+.scam-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.3s ease;
+}
+
+.scam-card:hover .scam-header {
+  background: rgba(220, 38, 38, 0.02);
+}
+
+.scam-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.scam-title-area {
+  flex: 1;
+}
+
+.scam-type {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  background: rgba(220, 38, 38, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+.scam-card h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.expand-icon {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.scam-card.expanded .expand-icon {
+  transform: rotate(0deg);
+}
+
+.scam-details {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: expandDown 0.3s ease;
+}
+
+@keyframes expandDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.example-section h4,
+.flags-section h4,
+.action-section h4 {
+  font-size: 0.95rem;
+  margin: 0 0 0.75rem 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.example-text {
+  background: var(--bg-light);
+  padding: 1rem;
+  border-left: 3px solid var(--primary);
+  border-radius: 4px;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.flags-section ul,
+.action-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.flags-section li {
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.flags-section li::before {
+  content: '🚩';
+  position: absolute;
+  left: 0;
+}
+
+.action-section li {
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.action-section li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: bold;
+}
+
+.library-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.protection-tips,
+.report-section {
+  background: var(--bg-white);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.protection-tips h3,
+.report-section h3 {
+  font-size: 1.25rem;
+  margin: 0 0 1.5rem 0;
+  color: var(--text-primary);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.tip {
+  background: var(--bg-light);
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.tip-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tip h4 {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.tip p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.report-section p {
+  color: var(--text-secondary);
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+.report-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.report-links li {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.report-links strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .scam-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .scam-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .library-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .library-intro,
+  .protection-tips,
+  .report-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .scam-header {
+    padding: 1rem;
+  }
+
+  .scam-details {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,269 @@
+.warning-card {
+  background: var(--bg-white);
+  border-radius: 8px;
+  border: 2px solid;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.warning-card.risk-high {
+  border-color: var(--primary);
+  background: linear-gradient(135deg, #fef2f2 0%, var(--bg-white) 100%);
+}
+
+.warning-card.risk-medium {
+  border-color: var(--warning);
+  background: linear-gradient(135deg, #fffbeb 0%, var(--bg-white) 100%);
+}
+
+.warning-card.risk-low {
+  border-color: var(--success);
+  background: linear-gradient(135deg, #f0fdf4 0%, var(--bg-white) 100%);
+}
+
+.warning-card.error-card {
+  border-color: #999;
+  background: linear-gradient(135deg, #f3f4f6 0%, var(--bg-white) 100%);
+}
+
+.card-header {
+  padding: 1.5rem;
+  border-bottom: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.warning-card.risk-high .card-header {
+  border-bottom-color: var(--primary);
+  background: rgba(220, 38, 38, 0.05);
+}
+
+.warning-card.risk-medium .card-header {
+  border-bottom-color: var(--warning);
+  background: rgba(245, 158, 11, 0.05);
+}
+
+.warning-card.risk-low .card-header {
+  border-bottom-color: var(--success);
+  background: rgba(22, 163, 74, 0.05);
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.type-badge {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.reason-section {
+  margin-bottom: 1.5rem;
+}
+
+.reason-section h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.reason {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.flags-section {
+  margin-bottom: 1.5rem;
+}
+
+.flags-section h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.flags-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flags-list li {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.flags-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.confidence-section {
+  margin-bottom: 1.5rem;
+}
+
+.confidence-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.confidence-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.confidence-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.confidence-value {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.card-actions {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.action-box {
+  border-radius: 6px;
+  padding: 1.5rem;
+  background: var(--bg-light);
+}
+
+.action-box h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.action-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.action-box li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.action-high {
+  background: rgba(220, 38, 38, 0.05);
+  border-left: 4px solid var(--primary);
+}
+
+.action-high h4 {
+  color: var(--primary);
+}
+
+.action-medium {
+  background: rgba(245, 158, 11, 0.05);
+  border-left: 4px solid var(--warning);
+}
+
+.action-medium h4 {
+  color: var(--warning);
+}
+
+.action-low {
+  background: rgba(22, 163, 74, 0.05);
+  border-left: 4px solid var(--success);
+}
+
+.action-low h4 {
+  color: var(--success);
+}
+
+.card-footer {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-light);
+}
+
+.excerpt-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem 0;
+}
+
+.excerpt {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background: var(--bg-white);
+  padding: 0.75rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--border-color);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.error-message {
+  color: #dc2626;
+  font-weight: 500;
+  padding: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .type-badge {
+    align-self: flex-start;
+  }
+
+  .card-content,
+  .card-actions,
+  .card-footer {
+    padding: 1rem;
+  }
+}

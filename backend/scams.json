@@ -1,0 +1,42 @@
+{
+  "job_scams": [
+    "Hi, we need you for urgent IT work. Click here to apply and get R5000. Fast process. Pm your details.",
+    "Work from home, no experience needed. R3000 per week guaranteed. Click to start immediately.",
+    "You have been selected for our remote job program. Confirm your details at www.fakesite.com",
+    "Urgent: Hiring developers now. Easy money, flexible hours. Send CV and bank account details.",
+    "HIRING NOW: No experience required. Get R10000 monthly. Process fee R500 upfront only.",
+    "Selected for Data Entry job. Work from home. R150 per hour guaranteed. Verify account now."
+  ],
+  "phishing": [
+    "URGENT: Your Capitec account has been locked. Click here to verify your identity immediately.",
+    "FNB Security Alert: Suspicious activity detected. Confirm your account at banking-fnb.com",
+    "Your bank account will be closed in 24hrs. Login to confirm: www.access-bank-confirm.com",
+    "Vodacom: Verify your airtime credit by clicking here: www.vodacom-confirm.net",
+    "PayPal: Confirm payment method within 24 hours or your account will be suspended.",
+    "Hi Absa customer, update your profile: www.absa-update-profile.co.za - DO THIS NOW"
+  ],
+  "romance_scams": [
+    "Hi love, I've been thinking about you. I need help with an emergency, can you send me some money?",
+    "Sweetheart, I'm stuck abroad and need R2000 for a ticket home. Please help, I love you.",
+    "Baby I'm in trouble, can you send bitcoin to help me?",
+    "Dear, I miss you so much. My business has a problem, I need R5000 urgently. Please help darling.",
+    "My angel, you mean everything to me. Can you help me with medical fees? R3000 please.",
+    "Honey, I need your help. Send me money via Western Union. I'll pay you back double, I promise."
+  ],
+  "fake_offers": [
+    "Congratulations! You've won R100,000! Click to claim your prize today.",
+    "FREE MONEY: Limited offer, get R500 free airtime. Claim now at xyz.com",
+    "You've been selected for our exclusive money-making program. Limited spots available!",
+    "You're one of 10 people selected for FREE CASH BACK! R1000 waiting. Claim now!!!",
+    "LOTTERY WINNER: You've won R50000. Verify your details at www.southafricalottery-claim.com",
+    "FREE iPhone 15! You qualified! Claim now: Click here (processing fee R99)"
+  ],
+  "money_requests": [
+    "Hi cuz, emergency at home. Need you to deposit R1000 to this account immediately.",
+    "Send me bitcoin, I'll triple it and send you back 3x the amount. Trust me.",
+    "Bro, this is urgent. My mom needs R2000 for hospital. Please send via Limpopo account.",
+    "I need R500 right now. Send to my account or Western Union. I'll pay you back tomorrow.",
+    "Yo, can you cash in 500 credit? I'm stuck and it's urgent. Send to 0721234567",
+    "URGENT: Need R10000 for car repairs. Can you help? Send to 081 XXXXXXX. Will repay."
+  ]
+}
